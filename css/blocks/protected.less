@@ -1,0 +1,82 @@
+// main: ../style.less
+
+.protected {
+    padding-top: 266px;
+    padding-bottom: 210px;
+    // background-image: url('../../img/phone-bg.png');
+}
+
+.protected__inner {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.protected__photo-container {
+    width: 700px;
+    position: relative;
+}
+
+.protected__photo {
+    position: absolute;
+    left: -374px;
+    top: -160px;
+    z-index: -1;
+}
+
+.protected__content {
+    width: 470px;
+}
+
+.protected__content-h3 {
+    font-size: 42px;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 600;
+    margin-bottom: 66px;
+}
+
+.protected__content-p {
+    margin-bottom: 26px;
+    font-size: 20px;
+    color: @text-color;
+    line-height: 1.4;
+}
+  
+.protected__buttons-container {
+    display: flex;
+    margin-top: 86px;
+}
+
+.hack-button {
+    padding-left: 26px;
+    padding-top: 9px;
+    padding-bottom: 13px;
+    padding-right: 80px;
+    background-color: @two-blue;
+    border-radius: 25px;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    margin-right: 20px;
+    &::after {
+        content: '';
+        position: absolute;
+        width: 13px;
+        height: 12px;
+        background-image: url('../img/arrow-icon.png');
+        right: 19px;
+        top: 15px;
+        transition: all .3s;
+    }
+    &:hover::after {
+        right: 10px;
+    }
+}
+
+.more-button {
+    padding: 10px 30px;
+    border: 1px solid #e9e9ea;
+    color: @blue-color;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+}

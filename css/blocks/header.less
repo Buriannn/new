@@ -1,0 +1,119 @@
+// main: ../style.less
+
+
+.header {
+    padding-top: 52px;
+    background-image: url('../img/intro-bg.jpg');
+    background-size: cover;
+    overflow: hidden;
+    background-position: bottom center;
+}
+
+.header__top-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__item {
+    width: 33.33333%;
+    display: flex;
+    align-items: center;
+}
+
+.header__info-list {
+    display: flex;
+    list-style: none;
+    margin-left: 30px;
+}
+
+.header_info-li {
+    margin-right: 42px;
+    font-weight: 600;
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.header__info-link {
+    color: @blue-color;
+    font-size: 16px;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+
+
+.header__icon-menu {
+    cursor: pointer;
+}
+
+
+.header__center-item {
+    justify-content: center;
+}
+
+
+
+
+
+.header__right-item {
+    justify-content: right;
+}
+
+.header__right-list {
+    display: flex;
+    list-style: none;
+    margin-left: auto;
+    // margin-left: 30px;
+}
+
+.header__right-li {
+    margin-left: 30px;
+    &:first-child {
+        margin-left: 0;
+    }
+}
+
+.header__right-link {
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.help-link {
+    color: #9f9fa1;
+    font-weight: 400;
+}
+
+.contacts-link {
+    color: @blue-color;
+    font-weight: 600;
+}
+
+.app-link {
+    padding: 8px 24px 13px 48px;
+    background-color: @two-blue;
+    position: relative;
+    border-radius: 30px;
+    color: #fff;
+    cursor: pointer;
+    &::before {
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 17px;
+        background-image: url('../img/apple-icon.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        top: 9px;
+        left: 17px;
+    }
+}
+
+.header__mobile-menu {
+    display: none;
+}

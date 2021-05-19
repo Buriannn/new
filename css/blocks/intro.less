@@ -1,0 +1,58 @@
+// main: ../style.less
+
+.intro {
+    padding-top: 120px;
+    position: relative;
+    padding-bottom: 480px;
+}
+
+.intro__h1 {
+    font-size: 62px;
+    text-align: center;
+    font-family: 'Varela Round', sans-serif;
+    color: #26272d;
+}
+
+.intro__p {
+    font-size: 20px;
+    color: @text-color;
+    text-align: center;
+    max-width: 785px;
+    margin: auto;
+    margin-top: 31px;
+}
+
+.intro__button {
+    width: 205px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: #edf0f2;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin: 62px auto 0;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: inherit;
+    color: @blue-color;
+    position: relative;
+    border: 1px solid #d8dcde;
+    padding-left: 23px;
+    margin-bottom: 55px;
+    &::before {
+        content: '';
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background-image: url('../img/play-icon.png');
+        left: 41px;
+        top: 21px
+    }
+}
+
+.intro__img {
+    position: absolute;
+    bottom: -273px;
+    left: 50%;
+    transform: translateX(-50%);
+}

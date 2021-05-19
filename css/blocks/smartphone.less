@@ -1,0 +1,103 @@
+// main: ../style.less
+
+.smartphone {
+    padding-top: 100px;
+    padding-bottom: 130px;
+    background-color: #f5f5f8;
+}
+
+.smartphone__h3 {
+    font-size: 42px;
+    text-align: center;
+    font-family: 'Varela Round', sans-serif;
+    color: #3a3d4b;
+    margin-top: 25px;
+    margin-bottom: 46px;
+}
+
+.smartphone__p {
+    text-transform: uppercase;
+    font-size: 12px;
+    text-align: center;
+    font-weight: 600;
+    color: #9799a1;
+}
+
+.smartphone__p-span {
+    font-weight: 800;
+}
+
+.smartphone__form {
+    max-width: 502px;
+    border: 1px solid #cbcbce;
+    height: 50px;
+    padding: 0 4px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 62px;
+    background-color: #f5f5f8;
+    justify-content: space-between;
+}
+
+.smartphone__input {
+    height: 100%;
+    border: none;
+    width: 304px;
+    border-radius: 30px;
+    margin-left: 20px;
+    font-family: inherit;
+    font-size: 16px;
+    color: #3a3d4b;
+    font-weight: 600;
+    background-color: #f5f5f8;
+}
+
+.smartphone__input::placeholder {
+    color: #3a3d4b;
+}
+
+.smartphone__button {
+    height: 42px;
+    display: flex;
+    align-items: center;
+    background-color: #6fc754;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: inherit;
+    color: #edf8ea;
+    padding-left: 31px;
+    padding-right: 57px;
+    position: relative;
+    &::after {
+        content: '';
+        position: absolute;
+        width: 13px;
+        height: 12px;
+        right: 24px;
+        background-image: url('../img/arrow-icon.png');
+        transition: all .3s;
+    }
+    &:hover::after {
+        right: 15px;
+    }
+}
+
+.download-p {
+    margin-bottom: 20px;
+}
+
+.smartphone__apple-link {
+    margin: 0 auto;
+}
+
+.smartphone__apple-link {
+    width: 210px;
+    height: 60px;
+    margin: auto;
+    display: block;
+}
